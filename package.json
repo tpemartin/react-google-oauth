@@ -1,5 +1,5 @@
 {
-  "name": "react-google-oauth-emajortaiwan",
+  "name": "@tpemartin/react-google-oauth",
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.cjs.js",

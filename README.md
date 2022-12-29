@@ -1,22 +1,20 @@
-# React Package Boilerplate
-Boilerplate code for a simple, lightweight, and performant react npm package. Read a step-by-step guide on how to create a react npm package on [Codify Tools](https://www.codifytools.com/blog/react-npm-package).
+# Usage
 
-![npm bundle size](https://img.shields.io/bundlephobia/min/@codifytools/react-npm-package-boilerplate)
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/@codifytools/react-npm-package-boilerplate)
-[![npm downloads](https://img.shields.io/npm/dt/@codifytools/react-npm-package-boilerplate)](https://www.npmjs.com/package/@codifytools/react-npm-package-boilerplate)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebook/react/blob/master/LICENSE)
+Insert the following two tags in the head of `/public/index.html`
 
-## Features
-- [Babel](https://babeljs.io/) for modern JavaScript and JSX transpilation
-- [Rollup](https://rollupjs.org/) for build
-- Bundle generated in `cjs` and `esm` formats
-- [Storybook](https://storybook.js.org/) for local development
+```
+<meta name="google-signin-client_id" content="{your google client id}"/>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+```
 
-### Commands
-- `npm install` - install project dependencies
-- `npm run storybook` - start local development environment.
-- `npm run build` - build package into `dist/` folder
-- `npm publish` - publish your package to [npm](npmjs.com).
+then 
+```
+import { SignIn } from '@tpemartin/react-google-oauth';
 
-### License
-MIT license, Copyright (c) Juan Pablo Mejia Duque. For more information see `LICENSE`.
+function App(){
+    return <SignIn/>
+}
+```
+
+# Credits
+The npm package use the boilerplate code from [Codify Tools](https://www.codifytools.com/blog/react-npm-package).
